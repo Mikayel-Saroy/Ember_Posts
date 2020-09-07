@@ -1,0 +1,95 @@
+@import "reeset";
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 21px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(245, 130, 9);
+}
+
+body {
+
+}
+
+
+//Route index
+.posts-page {
+  padding: 20px 450px 0 450px;
+}
+
+.post {
+  margin: 40px 0 30px 0;
+}
+
+.post-headline {
+  font-size: 21px;
+  color: rgb(245, 130, 9);
+  margin-left: 10px;
+}
+
+.post-headline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.post-date {
+  margin-right: 30px;
+  text-align: right;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.post-text {
+  font-size: 21px;
+}
+
+
+//Route Add-Post
+.add-post-page {
+  padding: 20px 450px 0 450px;
+  text-align: center;
+}
+
+.add-post-page input {
+  height: 30px;
+  width: 500px;
+  margin-top: 40px;
+  font-size: 21px;
+}
+
+.add-post-page textarea {
+  height: 200px;
+  width: 500px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+//Component Head
+.head {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  background-color: rgb(254, 167, 20);
+  height: 70px;
+}
+
+.head div {
+  margin: 22px 0 0 30px;
+}
+
+//Component add-button
+.add-button {
+  margin: 40px 0 30px 0;
+  background-color: rgb(245, 130, 9);
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  color: whitesmoke;
+  font-size: 18px;
+}
