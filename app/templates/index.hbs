@@ -2,7 +2,7 @@
   <h1>Posts</h1>
   {{#each this.Global.posts as |item|}}
     <div class="post">
-      <LinkTo class="post-headline" @route="posts" @model={{item.id}}>
+      <LinkTo class="post-headline" @route="posts.show" @model={{item.id}}>
         {{item.headline}}
       </LinkTo>
       <p class="post-text">{{item.text}}</p>
