@@ -12,10 +12,25 @@ h1 {
   color: rgb(245, 130, 9);
 }
 
+h3 {
+  font-size: 21px;
+  color: rgb(245, 130, 9);
+  margin-left: 10px;
+}
+
 body {
 
 }
 
+button {
+  margin: 40px 0 30px 0;
+  background-color: rgb(245, 130, 9);
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  color: whitesmoke;
+  font-size: 18px;
+}
 
 //Route index
 .posts-page {
@@ -85,11 +100,10 @@ body {
 
 //Component add-button
 .add-button {
-  margin: 40px 0 30px 0;
-  background-color: rgb(245, 130, 9);
-  height: 35px;
-  width: 120px;
-  border-radius: 20px;
-  color: whitesmoke;
-  font-size: 18px;
+
+}
+
+//Component edit-button
+.edit-button {
+  margin-left: 50px;
 }

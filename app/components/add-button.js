@@ -8,24 +8,21 @@ export default class AddButtonComponent extends Component {
 
   @action addNewPost() {
     let newPost = {
-      id: this.Global.currentID,
+      id: this.Global.posts.length+1,
       date: this.generateDate(),
       headline: this.Global.headline,
       text: this.Global.text,
     }
-    this.Global.posts = [newPost, ...this.Global.posts];
+    this.Global.posts = [...this.Global.posts, newPost];
     this.Global.headline = "";
     this.Global.text = "";
-  }
-
-  @action funcA() {
-    alert(this.Global.headline);
+    console.log(this.Global.posts);
   }
 
   generateDate() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
 
     today = mm + '/' + dd + '/' + yyyy;
