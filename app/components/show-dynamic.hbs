@@ -1,8 +1,10 @@
 <div class="posts-page">
-  <h3>{{this.Global.currentHeadline}}</h3>
-  <p class="post-text">{{this.Global.currentText}}</p>
-  <p class="post-date">{{this.Global.currentDate}}</p>
-  <LinkTo @route="posts.show" @model={{this.Global.dynamicID.edit}}>Edit</LinkTo>
+  <h3>{{@post.headline}}</h3>
+  <p class="post-text">{{@post.text}}</p>
+  <p class="post-date">{{@post.date}}</p>
+  <button>
+    <LinkTo @route="posts.edit" @model={{@post.id}}>Edit</LinkTo>
+  </button>
 </div>
 
 {{outlet}}

@@ -1,4 +1,6 @@
 <div>
-  <input type="text" value={{this.Global.headline}} />
-  <textarea type="text" value={{this.Global.text}} />
+  <Input @value={{@post.headline}} />
+  <Textarea @value={{@post.text}} cols="80" rows="6" />
+  {{log text}}
+  <button {{on "click" this.editPosts}}>Save</button>
 </div>

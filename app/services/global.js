@@ -42,4 +42,9 @@ export default class GlobalService extends Service {
       text: 'Ember was never popular to begin with. ... Ember wasnt popular because there was no big company behind it, no hype, no developer advocates or other devrel people cheering and bringing people in.'
     },
   ];
+
+  getPostById(id) {
+    const postId = parseInt(id);
+    return this.posts.find(post => post.id === postId);
+  }
 }
