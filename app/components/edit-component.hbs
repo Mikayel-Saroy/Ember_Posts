@@ -1,6 +1,6 @@
 <div>
-  <Input @value={{@post.headline}} />
-  <Textarea @value={{@post.text}} cols="80" rows="6" />
-  {{log text}}
+  <Input @value={{headline}} />
+  <Textarea @value={{text}} />
+  {{log @post}}
   <button {{on "click" this.editPosts}}>Save</button>
 </div>
