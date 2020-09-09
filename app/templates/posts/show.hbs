@@ -2,9 +2,9 @@
   <h3>{{@model.headline}}</h3>
   <p class="post-text">{{@model.text}}</p>
   <p class="post-date">{{@model.date}}</p>
-  <button>
-    <LinkTo @route="posts.edit" @model={{@model.id}}>Edit</LinkTo>
-  </button>
+  <LinkTo @route="posts.edit" @model={{@model.id}}>
+    <button>Edit</button>
+  </LinkTo>
 </div>
 
 {{outlet}}

@@ -8,6 +8,9 @@ export default class EditComponentComponent extends Component {
   @tracked text = this.args.post.text;
   @action editPosts() {
     this.args.post.headline = this.headline;
-    this.args.post.message = this.text;
+    this.args.post.text = this.text;
+    console.log(this.headline, this.text)
+    this.text = "";
+    this.headline = "";
   }
 }
