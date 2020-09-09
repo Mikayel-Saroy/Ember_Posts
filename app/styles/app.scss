@@ -10,29 +10,41 @@
   font-size: 18px;
 }
 
-button {
-  @include button_sample;
-}
-
-a {
+@mixin link_sample {
   text-decoration: none;
   color: whitesmoke;
   font-size: 21px;
 }
 
-h1 {
+@mixin h1_sample {
   text-align: center;
   font-size: 40px;
   color: rgb(245, 130, 9);
 }
 
-h3 {
+@mixin h3_sample {
   font-size: 21px;
   color: rgb(245, 130, 9);
   margin-left: 10px;
 }
 
-//Route index
+button {
+  @include button_sample;
+}
+
+a {
+  @include link_sample;
+}
+
+h1 {
+  @include h1_sample;
+}
+
+h3 {
+  @include h3_sample;
+}
+
+//Route index & show & edit
 .posts-page {
   padding: 20px 450px 0 450px;
 }

@@ -9,7 +9,7 @@ export default class EditComponentComponent extends Component {
   @action editPosts() {
     this.args.post.headline = this.headline;
     this.args.post.text = this.text;
-    console.log(this.headline, this.text)
+    // console.log(this.headline, this.text)
     this.text = "";
     this.headline = "";
   }
